@@ -4,11 +4,12 @@ import sys
 
 product_list  = ["Lemon Juice", "Lime Juice", "Apple Juice"]
 print("Main Menu Options")
-user_input_main = 1
-user_input_main = input("Enter: 0 to Exit or 1 to continue ") 
-while True:    
+#user_input_main = 1
+user_input_main = int(input("Enter: 0 to Exit or 1 to continue ")) 
+while user_input_main > 0:    
     if user_input_main == 0:   
-        break 
+        break
+     
     print("Product Menu Options")
     print("0: Exit App")
     print("1: Print Products List")
@@ -16,8 +17,7 @@ while True:
     print("3: Update")
     print("4: Delete")       
     user_input = int(input("Enter option from product menu "))
-
-    #exiting product list-----------------
+ #exiting product list-----------------
     if user_input == 0:
         exit()
 
