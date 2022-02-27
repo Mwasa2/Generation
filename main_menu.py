@@ -8,9 +8,8 @@ while user_input > 0 :
     user_input = int(input("Enter an option  or 0 to exit "))
     
     if user_input == 0:
-        break
+        exit()
     if user_input == 1:
-        
         import product_list
 
     if user_input == 2:
